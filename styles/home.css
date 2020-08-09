@@ -4,10 +4,6 @@
 
 .home header {
   height: 100vh;
-  background: url("../images/header.jpg") fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .home header h1 {
@@ -91,7 +87,7 @@
 }
 
 @media (min-width: 992px) {
-  .home #blog .row:last-child .col-sm-12:nth-last-child(-n+2) {
+  .home #blog .row:last-child .col-sm-12:nth-last-child(-n + 2) {
     margin-bottom: 0 !important;
   }
 }

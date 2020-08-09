@@ -1,144 +1,143 @@
-@import 'variables';
+@import "variables";
 
 nav {
-    transition: $transition;
-    position: absolute;
+  transition: $transition;
+  position: absolute;
+  width: 100%;
+  z-index: 8;
+  height: 4.5em;
+
+  .nav-header {
     width: 100%;
-    z-index: 8;
-    height: 4.5em;
+  }
 
-    .nav-header {
-      width: 100%;
+  @media (min-width: 992px) {
+    .list-inline-item {
+      margin-right: 2em !important;
     }
 
-    @media (min-width: 992px) {
-      .list-inline-item {
-        margin-right: 2em !important;
-      }
-
-      .list-inline-item:last-child {
-        margin-right: 0 !important;
-      }
-
-      .links-container a {
-        font-family: $louisGeorgeBold;
-        padding-bottom: 3px;
-        border-bottom: 2px solid transparent;
-      }
-
-      .links-container .a-dark:hover {
-        color: $grey;
-        text-decoration: none;
-        border-bottom: 2px solid $primaryColor;
-        padding-bottom: 3px;
-      }
-
-      .links-container .a-light:hover {
-        color: $white;
-        text-decoration: none;
-        border-bottom: 2px solid $primaryColor;
-        padding-bottom: 3px;
-      }
-
-      #menu .list-inline-item:nth-last-child(-n+3) {
-        margin-right: 0 !important;
-      }
+    .list-inline-item:last-child {
+      margin-right: 0 !important;
     }
 
-    a {
+    .links-container a {
       font-family: $louisGeorgeBold;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .links-container .a-dark:hover {
+      color: $grey;
       text-decoration: none;
+      border-bottom: 2px solid $primaryColor;
+      padding-bottom: 3px;
+    }
+
+    .links-container .a-light:hover {
+      color: $white;
+      text-decoration: none;
+      border-bottom: 2px solid $primaryColor;
+      padding-bottom: 3px;
+    }
+
+    #menu .list-inline-item:nth-last-child(-n + 3) {
+      margin-right: 0 !important;
+    }
+  }
+
+  a {
+    font-family: $louisGeorgeBold;
+    text-decoration: none;
+    transition: $transition;
+  }
+
+  .links-container {
+    position: fixed;
+    height: 100%;
+    width: 70%;
+    top: 0;
+    right: 0;
+    background: $white;
+    transform: translateX(100%);
+    transition: $transition;
+    z-index: 7;
+  }
+
+  .menu-open {
+    display: block !important;
+    transform: translateX(0);
+    background: $white;
+  }
+
+  #menu-btn {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+
+    span {
+      width: 32px;
+      height: 4px;
+      margin-bottom: 0.25em;
+      background: $white;
+      display: block;
       transition: $transition;
     }
 
-    .links-container {
-        position: fixed;
-        height: 100%;
-        width: 70%;
-        top: 0;
-        right:0;
-        background: $white;
-        transform: translateX(100%);
-        transition: $transition;
-        z-index: 7;
+    .span-dark {
+      background: $grey;
     }
 
-    .menu-open {
-        display:block !important;
-        transform: translateX(0);
-        background: $white;
+    .span-white {
+      background: $white;
     }
 
-    #menu-btn {
-        display: block;
-        cursor: pointer;
-        position: relative;
-        z-index: 20;
-        
-        span {
-            width: 32px;
-            height: 4px;
-            margin-bottom: 0.25em;
-            background: $white;
-            display: block;
-            transition: $transition;
-        }
-
-        .span-dark {
-            background: $grey;
-        }
-
-        .span-white {
-            background: $white;
-        }
-
-        .menu-btn-open {
-            transform: rotate(45deg);
-            margin: 0;
-        }
-
-        .menu-btn-open-2 {
-            transform: rotate(-45deg);
-            position: relative;
-            margin: 0;
-            bottom: 4px;
-        }
-
-        .menu-close {
-            display: none;
-            margin: 0;
-        }
-
-        .span:last-child {
-            margin-bottom: 0em;
-        }
+    .menu-btn-open {
+      transform: rotate(45deg);
+      margin: 0;
     }
 
-    .shop-icons {
+    .menu-btn-open-2 {
+      transform: rotate(-45deg);
+      position: relative;
+      margin: 0;
+      bottom: 4px;
+    }
+
+    .menu-close {
       display: none;
+      margin: 0;
     }
 
-    @media (min-width: 992px) {
+    .span:last-child {
+      margin-bottom: 0em;
+    }
+  }
 
-      a {
-        color: $white;
-      }
-      
-      .a-light {
-        color: $white;
-      }
+  .shop-icons {
+    display: none;
+  }
 
-      .a-dark {
-        color: $grey;
-      }
+  @media (min-width: 992px) {
+    a {
+      color: $white;
+    }
 
-      .links-container {
-        position: static;
-        background: transparent;
-        transform: translateX(0);
-        width: auto;
-        ul li:nth-last-child(-n+2) {
-          display: none;
+    .a-light {
+      color: $white;
+    }
+
+    .a-dark {
+      color: $grey;
+    }
+
+    .links-container {
+      position: static;
+      background: transparent;
+      transform: translateX(0);
+      width: auto;
+      ul li:nth-last-child(-n + 2) {
+        display: none;
       }
     }
 
@@ -146,106 +145,115 @@ nav {
       width: auto;
     }
 
-      #menu-btn {
-        display: none;
-      }
+    #menu-btn {
+      display: none;
+    }
 
-      .shop-icons {
-        display: block;
-      }
+    .shop-icons {
+      display: block;
     }
   }
+}
 
-  /* fixed nav */
-  .fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: $white;
-    box-shadow: $lightShadow;
-    z-index: 4  ;
-  }
+/* fixed nav */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
+  box-shadow: $lightShadow;
+  z-index: 4;
+}
 
-  .top-link {
-    font-size: 1.25rem;
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    background: var(--clr-secondary);
-    width: 2rem;
-    height: 2rem;
-    display: grid;
-    place-items: center;
-    border-radius: var(--radius);
-    color: var(--clr-white);
-    animation: bounce 2s ease-in-out infinite;
-    visibility: hidden;
-    z-index: -100;
-  }
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-secondary);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
 
-  .show-link {
-    visibility: visible;
-    z-index: 100;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
 
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 header {
+  height: 100vh;
+  background: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  @media (min-width: 992px) {
+    background-attachment: fixed;
+  }
+  .container {
+    position: relative;
+    color: $white;
+    z-index: 2;
 
-    .container {
-        position: relative;
-        color: $white;
-        z-index: 2;
-
-        .scroll-down-btn {
-            position: absolute;
-            z-index: 8;
-            bottom: 2em;
-        }
+    .scroll-down-btn {
+      position: absolute;
+      z-index: 8;
+      bottom: 2em;
     }
+  }
 
-    h1 {
-      text-transform: uppercase;
-    }
+  h1 {
+    text-transform: uppercase;
+  }
 
-    h1, h2, p {
-      color: $white;
-    }
+  h1,
+  h2,
+  p {
+    color: $white;
+  }
 
-    h2 {
-      font-family: $louisGeorgeRegular;
-    }
+  h2 {
+    font-family: $louisGeorgeRegular;
+  }
 }
 
 header::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: $grey;
-    opacity: .8;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $grey;
+  opacity: 0.8;
 }
 
 .overlay {
   background: $grey;
-  opacity: .6;
-  width:100%;
-  height:100vh;
-  z-index:4;
+  opacity: 0.6;
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
   position: fixed;
   transition: $transition;
   display: none;

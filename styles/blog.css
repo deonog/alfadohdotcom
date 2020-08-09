@@ -1,12 +1,19 @@
-header {
+.blog header {
   height: 50vh;
-  background: url("../images/header.jpg") fixed;
+  background: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
-header::after {
+@media (min-width: 992px) {
+  .blog header {
+    background-attachment: fixed;
+  }
+}
+
+.blog header::after {
   height: 50%;
 }
 /*# sourceMappingURL=blog.css.map */

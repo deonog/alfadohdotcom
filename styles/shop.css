@@ -50,10 +50,17 @@
 
 .shop header {
   height: 50vh;
-  background: url("../images/header.jpg") fixed;
+  background: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+@media (min-width: 992px) {
+  .shop header {
+    background-attachment: fixed;
+  }
 }
 
 .shop header::after {
@@ -74,7 +81,8 @@
   background: #333333;
 }
 
-.shop .categories-wrapper .category:hover h5, .shop .categories-wrapper .category:hover span {
+.shop .categories-wrapper .category:hover h5,
+.shop .categories-wrapper .category:hover span {
   color: #fff;
 }
 /*# sourceMappingURL=shop.css.map */

@@ -1,33 +1,38 @@
-@import 'variables';
-@import 'products';
+@import "variables";
+@import "products";
 
 .shop {
-    header {
-        height: 50vh;
-        background: url('../images/header.jpg') fixed;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+  header {
+    height: 50vh;
+    background: url("../images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    @media (min-width: 992px) {
+      background-attachment: fixed;
     }
-    
-    header::after {
-        height: 50%;
+  }
+
+  header::after {
+    height: 50%;
+  }
+
+  .categories-wrapper {
+    border: 1px solid $grey;
+
+    .category {
+      cursor: pointer;
+      transition: $transition;
     }
 
-    .categories-wrapper {
-        border: 1px solid $grey;
-
-        .category {
-            cursor: pointer;
-            transition: $transition;
-        }
-
-        .category:hover {
-            background: $grey;
-        }
-
-        .category:hover h5, .category:hover span {
-            color: $white;
-        }
+    .category:hover {
+      background: $grey;
     }
+
+    .category:hover h5,
+    .category:hover span {
+      color: $white;
+    }
+  }
 }

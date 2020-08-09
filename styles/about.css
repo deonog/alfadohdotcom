@@ -1,9 +1,16 @@
 .about header {
   height: 50vh;
-  background: url("../images/header.jpg") fixed;
+  background: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+@media (min-width: 992px) {
+  .about header {
+    background-attachment: fixed;
+  }
 }
 
 .about header::after {
@@ -34,7 +41,7 @@
 }
 
 .about .banner::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   height: 100%;
@@ -42,7 +49,7 @@
   top: 0;
   left: 0;
   background: #333333;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .about .experience {
