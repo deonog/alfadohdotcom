@@ -354,7 +354,7 @@ footer .row:last-child p {
 }
 
 .home header::after {
-  height: 100%;
+  height: 100vh;
 }
 
 .home header .button {
