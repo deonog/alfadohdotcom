@@ -1,0 +1,36 @@
+footer {
+  background: #333333;
+  padding: 3em 0 0 0 !important;
+}
+
+footer hr {
+  border: 0.5px solid #AD7226 !important;
+  width: 1.5em !important;
+}
+
+@media (min-width: 992px) {
+  footer hr {
+    margin: 0.5em 0;
+  }
+}
+
+footer ul li a {
+  color: #fff;
+  font-family: "Louis George Caf Regular", sans-serif;
+}
+
+footer h5 {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  font-family: "Louis George Caf Regular", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+footer .row:last-child p {
+  font-size: 0.75em;
+}
+/*# sourceMappingURL=footer.css.map */

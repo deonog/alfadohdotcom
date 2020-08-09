@@ -1,0 +1,31 @@
+@import 'variables';
+
+.services {
+    header {
+        height: 50vh;
+        background: url('../images/header.jpg') fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    header::after {
+        height: 50%;
+    }
+}
+
+/* SINGLE SERVICE */
+
+.service {
+    header {
+        height: 50vh;
+        background: url('../images/header.jpg') fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    header::after {
+        height: 50%;
+    }
+}

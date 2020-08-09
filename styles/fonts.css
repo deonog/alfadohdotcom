@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Louis George Caf Regular';
+  src: url("../fonts/louis-george-caf/Louis George Cafe.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Louis George Caf Bold';
+  src: url("../fonts/louis-george-caf/Louis George Cafe Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Playfair Display Regular';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf ") format("truetype");
+  /* Safari, Android, iOS */
+}
+/*# sourceMappingURL=fonts.css.map */

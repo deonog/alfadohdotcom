@@ -1,0 +1,43 @@
+@import 'variables';
+
+footer {
+    background: $grey;
+    padding: 3em 0 0 0 !important;
+
+    hr {
+        border: 0.5px solid $primaryColor !important;
+        width: 1.5em !important;
+    }
+
+    @media (min-width: 992px) {
+        hr {
+            margin: 0.5em 0;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                color: $white;
+                font-family: $louisGeorgeRegular;
+            }
+        }
+    }
+
+    h5 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        font-family: $louisGeorgeRegular;
+        color: $white;
+        margin: 0;
+    }
+
+    .row:last-child {
+        p {
+            font-size: 0.75em;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import 'variables';
+
+.about {
+
+    header {
+        height: 50vh;
+        background: url('../images/header.jpg') fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    header::after {
+        height: 50%;
+    }
+    
+    .banner {
+        padding: 5em 0;
+        position: relative;
+        background: url('../images/paintings/painting-5.png') fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        .container {
+            position: relative;
+            z-index: 3;
+        }
+    
+        h2 {
+            color: $white;
+        }
+    
+        i {
+            color: $white;
+            font-size: 3em;
+        }
+    }
+    
+    .banner::after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $grey;
+        opacity: .6;
+    }
+    
+    .experience {
+        background: $lightGrey;
+        margin-bottom: 1em;
+    
+        span {
+            display: block;
+            font-family: $louisGeorgeRegular;
+        }
+        .experience-date {
+            background: $primaryColor;
+            span {
+                color: $white;
+            }
+        }
+    
+        .experience-meta {
+            .experience-title {
+                span {
+                    font-family: $louisGeorgeBold;
+                }
+            }
+            .experience-location {
+                span {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+
+    .experience:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+}
+

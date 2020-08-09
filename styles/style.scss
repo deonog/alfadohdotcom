@@ -1,0 +1,121 @@
+@import 'header';
+@import 'footer';
+@import 'fonts';
+@import 'home';
+@import 'products';
+@import 'about';
+@import 'services';
+@import 'shop';
+@import 'blog';
+@import 'contact';
+
+
+h1 {
+    font-family: $louisGeorgeBold;
+    color: $grey;
+}
+
+h2, h3, h4 {
+    font-family: $louisGeorgeRegular;
+    color: $grey;
+}
+
+h1, h2, h5 {
+    margin-bottom: 0 !important;
+}
+
+h5 {
+    font-family: $louisGeorgeRegular;
+}
+
+ul {
+    margin: 0 !important;
+}
+
+p {
+    font-family: $playfairDisplayRegular;
+    color: $textColor;
+}
+
+body a {
+    transition: $transition;
+}
+
+body hr {
+    border-top: 3.5px solid $primaryColor;
+    border-radius: 20px;
+    width: 5em;
+    display:block;
+    margin: 0.5em 0;
+}
+
+body header hr {
+    width: 1.5em;
+}
+
+body .button {
+    padding: 0.75em 1.5em;
+    background: $primaryColor;
+    border: 2px solid transparent;
+    font-family: $louisGeorgeRegular;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: $white;
+    text-decoration: none !important;
+}
+
+body .button:hover {
+    background: transparent;
+    border: 2px solid $primaryColor;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: $primaryColor;
+}
+
+body .button-2 {
+    background: transparent;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
+}
+
+body .button-2:hover {
+    background: $primaryColor;
+    border: 2px solid $primaryColor;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: $white !important;
+}
+
+body .add-cart-btn {
+    padding: 0.5em 1em;
+    background: transparent;
+    border: 2px solid $grey;
+    font-family: $louisGeorgeRegular;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: $grey;
+    text-decoration: none !important;
+    width: 50%;
+}
+
+body .add-cart-btn:hover {
+    background: $grey;
+    border: 2px solid $grey;
+    color: $white;
+}
+
+.padding hr {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+.padding {
+    padding: 5em 0;
+}
+
+.padding-single {
+    padding: 7em 0;
+}
