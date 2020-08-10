@@ -242,6 +242,13 @@ header .container .scroll-down-btn {
   position: absolute;
   z-index: 8;
   bottom: 2em;
+  display: none;
+}
+
+@media (min-width: 767px) {
+  header .container .scroll-down-btn {
+    display: block;
+  }
 }
 
 header h1 {

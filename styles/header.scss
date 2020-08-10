@@ -219,6 +219,10 @@ header {
       position: absolute;
       z-index: 8;
       bottom: 2em;
+      display: none;
+      @media (min-width: 767px) {
+        display: block;
+      }
     }
   }
 

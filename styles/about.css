@@ -14,16 +14,23 @@
 }
 
 .about header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 .about .banner {
   padding: 5em 0;
   position: relative;
-  background: url("../images/paintings/painting-5.png") fixed;
+  background: url("../images/paintings/painting-5.png");
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+  .about .banner {
+    background-attachment: fixed;
+  }
 }
 
 .about .banner .container {

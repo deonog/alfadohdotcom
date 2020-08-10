@@ -242,6 +242,13 @@ header .container .scroll-down-btn {
   position: absolute;
   z-index: 8;
   bottom: 2em;
+  display: none;
+}
+
+@media (min-width: 767px) {
+  header .container .scroll-down-btn {
+    display: block;
+  }
 }
 
 header h1 {
@@ -519,16 +526,23 @@ footer .row:last-child p {
 }
 
 .about header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 .about .banner {
   padding: 5em 0;
   position: relative;
-  background: url("../images/paintings/painting-5.png") fixed;
+  background: url("../images/paintings/painting-5.png");
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+  .about .banner {
+    background-attachment: fixed;
+  }
 }
 
 .about .banner .container {
@@ -603,7 +617,7 @@ footer .row:last-child p {
 }
 
 .services header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 /* SINGLE SERVICE */
@@ -685,7 +699,7 @@ footer .row:last-child p {
 }
 
 .shop header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 .shop .categories-wrapper {
@@ -723,7 +737,7 @@ footer .row:last-child p {
 }
 
 .blog header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 .contact header {
@@ -742,7 +756,7 @@ footer .row:last-child p {
 }
 
 .contact header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 h1 {

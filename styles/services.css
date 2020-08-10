@@ -14,7 +14,7 @@
 }
 
 .services header::after {
-  height: 50%;
+  height: 50vh;
 }
 
 /* SINGLE SERVICE */
