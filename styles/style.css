@@ -783,6 +783,11 @@ h5 {
 
 ul {
   margin: 0 !important;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 p {
@@ -867,7 +872,7 @@ html {
 }
 
 .padding {
-  padding: 5em 0;
+  padding: 4em 0 5em 0;
 }
 
 .padding-single {
